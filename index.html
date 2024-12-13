@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monopoly Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container-fluid d-flex gap-3">
+    <div id="board">
+    </div>
+    <div>
+        <div id="player-Player 1-info" class="card bg-info bg-opacity-25 border-5 border-black p-2" style="width: 25rem;"></div>
+        <div id="player-Player 2-info" class="card bg-info bg-opacity-25 border-5 border-black p-2 mt-2 mb-2" style="width: 25rem;"></div>
+
+
+        <div class="card p-2 bg-warning bg-opacity-50 border-5 border-black bg" style="width: 25rem;">
+            <div id="diceResult" class="fw-bold fs-5 mb-2">Dice Roll:</div>
+            <button id="rollButton" class="btn btn-lg btn-success">Roll Dice</button>
+        </div>
+        <div class="card bg-primary bg-opacity-50 p-2 border-5 border-black mt-2" style="width: 25rem;">
+            <div class="fs-5 fw-bold mb-2">Select Property to Build House</div>
+            <select id="propertySelect" class="form-select mb-3" aria-label="Default select example">
+                <option value="">Select a Property</option>
+            </select>
+            <button id="buildHouseButton" class="btn btn-lg btn-warning mt-2">Build House</button>
+        </div>
+
+        <div class="d-grid mt-5">
+            <button id="restartButton" class="btn btn-danger btn-lg">Restart Game</button>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
